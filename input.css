@@ -35,3 +35,17 @@ ul.l-pj > li {
   padding: 5px;
   margin-bottom: 5px;
 }
+
+.group-stack {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.list-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 4px;
+}

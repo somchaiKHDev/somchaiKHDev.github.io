@@ -42,16 +42,16 @@
           >Home</a
         >
         <a
-          href="#activity"
-          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
-          onclick="closeNav()"
-          >Activity</a
-        >
-        <a
           href="#about"
           class="w3-bar-item w3-button w3-text-grey w3-hover-black"
           onclick="closeNav()"
           >About</a
+        >
+        <a
+          href="#activity"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Activity</a
         >
         <a
           href="#contact"
@@ -98,52 +98,32 @@
         </button>
       </header>
 
-      <!-- Activity Section -->
-      <div class="w3-padding-32 w3-content" id="activity">
-        <h2 class="w3-text-grey">Activity / กิจกรรม</h2>
-        <hr class="w3-opacity" />
-
-        <!-- Grid for photos -->
-        <div class="w3-row-padding" style="margin: 0 -16px">
-          <div class="w3-half">
-            <img src="assets/img-3.jpg" style="width: 100%" />
-            <img src="assets/img-2.jpg" style="width: 100%" />
-            <img src="assets/img-6.jpg" style="width: 100%" />
-            <img src="assets/img-9.jpg" style="width: 100%" />
-            <img src="assets/img-11.jpg" style="width: 100%" />
-            <img src="assets/img-13.jpg" style="width: 100%" />
-          </div>
-
-          <div class="w3-half">
-            <img src="assets/img-4.jpg" style="width: 100%" />
-            <img src="assets/img-5.jpg" style="width: 100%" />
-            <img src="assets/img-7.jpg" style="width: 100%" />
-            <img src="assets/img-8.jpg" style="width: 100%" />
-            <img src="assets/img-10.jpg" style="width: 100%" />
-            <img src="assets/img-12.jpg" style="width: 100%" />
-          </div>
-          <!-- End photo grid -->
-        </div>
-        <!-- End Activity Section -->
-      </div>
-
       <!-- About Section -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
         <h2>About / เกี่ยวกับ</h2>
         <hr class="w3-opacity" />
-        <p>
-          ผมเริ่มต้นสายงานเขียนโปรแกรมด้วยการพัฒนาเว็บแอปพลิเคชันโดยใช้ PHP
-          Framework Laravel ซึ่งเป็นจุดเริ่มต้นที่ทำให้เข้าใจโครงสร้างของระบบและ
-          MVC pattern ได้อย่างลึกซึ้ง หลังจากนั้น
-          ผมได้มีโอกาสขยายความสามารถมาที่ฝั่ง Front-end โดยเริ่มจาก React.js
-          ซึ่งทำให้ผมเข้าใจแนวคิดของ component-based architecture และการจัดการ
-          state ต่อมา ผมได้เรียนรู้และพัฒนาโปรเจกต์ด้วย AngularJS
-          ซึ่งช่วยเสริมความเข้าใจในเรื่อง data binding และ dependency injection
-          นอกจากนี้ ผมยังสนใจด้าน Back-end จึงได้ศึกษาการพัฒนา API ด้วย NestJS
-          พร้อมทั้งทำงานร่วมกับฐานข้อมูลหลากหลายรูปแบบ ทั้ง MySQL, SQL Server,
-          MongoDB และ NoSQL
-          ซึ่งช่วยให้ผมเข้าใจการออกแบบระบบและการจัดการข้อมูลได้อย่างยืดหยุ่นและครอบคลุมมากยิ่งขึ้น
-        </p>
+        <div class="container">
+          <ul class="dot-list">
+            <li>
+              เริ่มต้นสายงานเขียนโปรแกรมด้วยการพัฒนาเว็บแอปพลิเคชันโดยใช้ PHP
+              Framework Laravel 4
+            </li>
+            <li>
+              Front-end เริ่มจาก React.js ใช้แนวคิดของ component-based
+              architecture และการจัดการ state
+            </li>
+            <li>
+              เรียนรู้และพัฒนาโปรเจกต์ด้วย AngularJS
+              ซึ่งช่วยเสริมความเข้าใจในเรื่อง data binding และ dependency
+              injection
+            </li>
+            <li>
+              ด้าน Back-end ได้ศึกษาการพัฒนา API ด้วย NestJS
+              พร้อมทั้งทำงานร่วมกับฐานข้อมูลหลากหลายรูปแบบ ทั้ง MySQL, SQL
+              Server, MongoDB และ NoSQL
+            </li>
+          </ul>
+        </div>
 
         <!-- Testimonials -->
         <h3 class="w3-padding-24">Work Experience / ประสบการณ์การทำงาน</h3>
@@ -277,11 +257,19 @@
                 <div class="group-stack">
                   <div class="list-stack">
                     <img
-                      src="https://suhelmakkad.gallerycdn.vsassets.io/extensions/suhelmakkad/shadcn-ui/0.1.1/1695843310552/Microsoft.VisualStudio.Services.Icons.Default"
-                      alt="ShadCN UI"
+                      src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-256.png"
+                      alt="Firebase Logo"
                       width="30"
                     />
-                    <span>ShadCN UI</span>
+                    <span>Firebase</span>
+                  </div>
+                  <div class="list-stack">
+                    <img
+                      src="https://mui.com/static/logo.svg"
+                      alt="MUI Logo"
+                      width="30"
+                    />
+                    <span>Mui</span>
                   </div>
                   <div class="list-stack">
                     <img
@@ -325,7 +313,73 @@
               <span>Web Designer</span>
             </div>
           </li>
+
+          <li class="w3-bar">
+            <img
+              src="https://nestjs.com/logo-small-gradient.d792062c.svg"
+              alt="Nestjs Logo"
+              class="w3-bar-item w3-hide-small"
+              style="width: 85px"
+            />
+
+            <div class="w3-bar-item">
+              <span class="w3-large">NestJs with Lost and Found</span><br />
+              <div class="flex flex-row items-end gap-2">
+                <img
+                  src="https://em-content.zobj.net/thumbs/240/apple/354/backhand-index-pointing-right_1f449.png"
+                  alt="Firebase Logo"
+                  width="25"
+                />
+                <a href="#" style="pointer-events: none; color: gray"
+                  >Comming soon !</a
+                >
+                <!-- <a href="https://travel-spot-login.web.app/" target="_blank"
+                  >https://travel-spot-login.web.app/</a
+                > -->
+              </div>
+              <br />
+              <div class="group-stack">
+                <div class="list-stack">
+                  <img
+                    src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-256.png"
+                    alt="Firebase Logo"
+                    width="30"
+                  />
+                  <span>Firebase</span>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
+      </div>
+
+      <!-- Activity Section -->
+      <div class="w3-padding-32 w3-content" id="activity">
+        <h2 class="w3-text-grey">Activity / กิจกรรม</h2>
+        <hr class="w3-opacity" />
+
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <img src="assets/img-3.jpg" style="width: 100%" />
+            <img src="assets/img-2.jpg" style="width: 100%" />
+            <img src="assets/img-6.jpg" style="width: 100%" />
+            <img src="assets/img-9.jpg" style="width: 100%" />
+            <img src="assets/img-11.jpg" style="width: 100%" />
+            <img src="assets/img-13.jpg" style="width: 100%" />
+          </div>
+
+          <div class="w3-half">
+            <img src="assets/img-4.jpg" style="width: 100%" />
+            <img src="assets/img-5.jpg" style="width: 100%" />
+            <img src="assets/img-7.jpg" style="width: 100%" />
+            <img src="assets/img-8.jpg" style="width: 100%" />
+            <img src="assets/img-10.jpg" style="width: 100%" />
+            <img src="assets/img-12.jpg" style="width: 100%" />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Activity Section -->
       </div>
 
       <!-- Contact Section -->

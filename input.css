@@ -46,3 +46,76 @@ ul.l-pj > li {
   align-items: center;
   gap: 4px;
 }
+
+.container {
+  /* background: white; */
+  /* padding: 30px; */
+  /* border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+}
+
+.dot-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dot-list li {
+  position: relative;
+  padding: 15px 0 15px 35px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1.1em;
+  border-left: 3px solid #667eea;
+  background: linear-gradient(
+    90deg,
+    rgba(102, 126, 234, 0.05) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s ease;
+}
+
+.dot-list li:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(102, 126, 234, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dot-list li:before {
+  content: "●";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #667eea;
+  font-size: 1.5em;
+  line-height: 1;
+  animation: pulse 2s infinite;
+}
+
+.dot-list li:nth-child(1):before {
+  color: #e53e3e;
+}
+.dot-list li:nth-child(2):before {
+  color: #38a169;
+}
+.dot-list li:nth-child(3):before {
+  color: #3182ce;
+}
+.dot-list li:nth-child(4):before {
+  color: #805ad5;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
